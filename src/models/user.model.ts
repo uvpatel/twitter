@@ -1,12 +1,10 @@
+import { UserZodSchema } from "@/schema/user.schema";
+import { user } from "@/types/user.types";
 import { Schema, model , models } from "mongoose";
+import z from "zod";
 
 
 
-interface user {
-    username: string,
-    password: string,
-    email: string
-}
 
 const userSchema = new Schema<user>({
     username: {
@@ -26,5 +24,7 @@ const userSchema = new Schema<user>({
 timestamps: true
 })
 
+
+type User = z.infer<typeof UserZodSchema>;
 
 export const User = models.User ||  model<user>("User",userSchema)
