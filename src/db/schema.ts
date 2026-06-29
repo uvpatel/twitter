@@ -6,3 +6,9 @@ export const usersTable = pgTable("users", {
   age: integer().notNull(),
   email: varchar({ length: 255 }).notNull().unique(),
 });
+
+export const tweetTable = pgTable("tweet", {
+  tweetid: integer().primaryKey().generatedAlwaysAsIdentity(),
+  desc: varchar({ length: 255 }).notNull(),
+  
+})
