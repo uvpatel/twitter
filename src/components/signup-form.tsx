@@ -182,6 +182,9 @@ export function SignupForm() {
       )
 
       router.push("/")
+      router.refresh()
+    } catch (error: any) {
+      alert(error.message || "Something went wrong. Please try again.")
     } finally {
       setLoading(
         false

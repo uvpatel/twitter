@@ -3,7 +3,7 @@ import { db } from "@/index";
 import { NextRequest, NextResponse } from "next/server";
 
 
-async function GET(req:Request) {
+export async function GET(req:Request) {
     try {
         const tweet = await db
     .select()

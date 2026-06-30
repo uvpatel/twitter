@@ -1,9 +1,9 @@
-"use client"
-
+import { requireUnAuth } from "@/lib/auth-guard"
 import { LoginForm } from "@/components/login-form"
 import { GalleryVerticalEndIcon } from "lucide-react"
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  await requireUnAuth()
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
