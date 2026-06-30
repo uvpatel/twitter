@@ -24,6 +24,7 @@
     "dotenv": "^17.4.2",
     "drizzle-orm": "^1.0.0-rc.4",
     "lucide-react": "^1.22.0",
+    "mini-svg-data-uri": "^1.4.4",
     "mongodb": "^7.4.0",
     "mongoose": "^9.7.3",
     "motion": "^12.42.0",

@@ -1,5 +1,6 @@
 "use client";
 import { ParallaxHeroImages } from "@/components/ui/parallax-hero-images";
+import NoiseBackgroundDemo from "./noise-background-demo";
 
 export default function ParallaxHeroImagesDemo() {
   return (
@@ -13,6 +14,7 @@ export default function ParallaxHeroImagesDemo() {
           Move your mouse to see the parallax effect. Images at different depths
           move at different speeds.
         </p>
+        <NoiseBackgroundDemo />
       </div>
     </div>
   );
